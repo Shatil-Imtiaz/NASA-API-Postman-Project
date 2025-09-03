@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "de63ec01-5ceb-41f5-86f4-28a13013217e",
+		"name": "login_spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47136775",
+		"_collection_link": "https://shatil2580-2913692.postman.co/workspace/Shatil-'s-Workspace~0ba3a82d-5c7c-40d7-8fed-251f076d74a1/collection/47136775-de63ec01-5ceb-41f5-86f4-28a13013217e?action=share&source=collection_link&creator=47136775"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/callback",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "393294e4deb34b6c9b8c86cd558d99c8",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "17692dadff344184aa731646827de336",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Midnight Radio\",\r\n  \"description\": \"Created via Postman\",\r\n  \"public\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.spotify.com/v1/users/31ybuiopn7jqrelo6pbcdn3qkmri/playlists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"31ybuiopn7jqrelo6pbcdn3qkmri",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/callback",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "393294e4deb34b6c9b8c86cd558d99c8",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "17692dadff344184aa731646827de336",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"uris\": [\r\n    \"spotify:track:4kbYbXKuHoVameRXatwbqo\",\r\n    \"spotify:track:5MPLeS9KdZlA04OOCUb5Bt\",\r\n    \"spotify:track:1EDPVGbyPKJPeGqATwXZvN\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.spotify.com/v1/playlists/3tGwelVtIiXpAQnBMJTIcS/tracks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"playlists",
+						"3tGwelVtIiXpAQnBMJTIcS",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

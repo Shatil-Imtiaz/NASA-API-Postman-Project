@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "d8e724bb-3e4c-41d5-997d-07ad1f5a45a6",
+		"name": "Nasa_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47136775",
+		"_collection_link": "https://shatil2580-2913692.postman.co/workspace/Shatil-'s-Workspace~0ba3a82d-5c7c-40d7-8fed-251f076d74a1/collection/47136775-d8e724bb-3e4c-41d5-997d-07ad1f5a45a6?action=share&source=collection_link&creator=47136775"
+	},
+	"item": [
+		{
+			"name": "Curiosity Photos on the 1st Sol",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1&api_key=WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "sol",
+							"value": "1"
+						},
+						{
+							"key": "api_key",
+							"value": "WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curiosity Photos on Earth Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98&earth_date=2022-10-28",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98"
+						},
+						{
+							"key": "earth_date",
+							"value": "2022-10-28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Picture of the Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "WMb0x8iQIgXeGtvDrMISHddl48lnYswl3OxOnp98"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mars.jpl.nasa.gov/msl-raw-images/msss/00001/mcam/0001ML0000001000I1_DXXX.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mars.jpl.nasa.gov/msl-raw-images/msss/00001/mcam/0001ML0000001000I1_DXXX.jpg",
+					"protocol": "http",
+					"host": [
+						"mars",
+						"jpl",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"msl-raw-images",
+						"msss",
+						"00001",
+						"mcam",
+						"0001ML0000001000I1_DXXX.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03636/opgs/edr/ccam/CR0_720272059EDR_F0973110CCAM03635M_.JPG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03636/opgs/edr/ccam/CR0_720272059EDR_F0973110CCAM03635M_.JPG",
+					"protocol": "https",
+					"host": [
+						"mars",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"msl-raw-images",
+						"proj",
+						"msl",
+						"redops",
+						"ods",
+						"surface",
+						"sol",
+						"03636",
+						"opgs",
+						"edr",
+						"ccam",
+						"CR0_720272059EDR_F0973110CCAM03635M_.JPG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apod.nasa.gov/apod/image/2506/RubinsGalaxy_hst2000.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apod.nasa.gov/apod/image/2506/RubinsGalaxy_hst2000.jpg",
+					"protocol": "https",
+					"host": [
+						"apod",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"apod",
+						"image",
+						"2506",
+						"RubinsGalaxy_hst2000.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
